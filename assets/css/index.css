@@ -1,0 +1,75 @@
+/* 将底部区域居中和字体大小设置 */
+.layui-footer {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* 将icon的图标右侧外边距拉大 */
+.iconfont {
+    margin-right: 6px;
+}
+/* 调整layui的icon布局 */
+.layui-icon {
+    margin-right: 6px;
+    margin-left: 18px;
+}
+
+/* 设置iframe大小 */
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* layui-body将其超出部分隐藏 */
+.layui-body {
+    overflow: hidden;
+}
+
+/* 删除掉a标签的所有c3动画 */
+a {
+    transition: none !important;
+}
+
+/* 设置左边导航栏头像区域大小 */
+.userinfo {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    user-select: none; /* 不允许鼠标选中 */
+}
+
+/* 给左边的userinfo增加下边框 */
+.layui-side-scroll .userinfo {
+    border: 2px solid #282b33;
+}
+
+/* 设置头像大小 */
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+
+}
+
+/* 设置文字头像样式 */
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+/* 设置文字往右移动 */
+.usercenter {
+    margin-right: 25px;
+}
+
+

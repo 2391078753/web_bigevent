@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">button</button>
+
+    <script>
+var btnTimer = null; // 1.定义一个节流阀
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function() {
+    // 3.判断节流阀是否为空，如果不为空，则证明距离上次执行间隔不足100ms
+    if(btnTimer) {
+        console.log("---------jieliu--------");
+        return;
+    }
+    btnTimer = setTimeout(function() {
+        console.log("--------btnPlay111--------");
+        console.log("--------btnPlay222--------");
+        btnTimer = null; // 2.清空节流阀，方便下次开启定时器
+    }, 700)
+})
+    </script>
+    
+</body>
+</html>
