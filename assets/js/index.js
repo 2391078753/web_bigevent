@@ -39,7 +39,6 @@ function getUserInfo() {
 
 // 渲染头像
 function renderAvatar(res) {
-
     // 渲染欢迎部分
     var name = res.nickname || res.username;
     $("#welcome").html("欢迎&nbsp;&nbsp"+name);
